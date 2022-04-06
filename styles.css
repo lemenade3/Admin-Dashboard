@@ -19,26 +19,16 @@ body {
     display: flex;
     flex-direction: column;
     overflow: scroll;
-    padding: 20px;
 }
 
 .sidebar > div {
-    margin: 10px;
-}
-
-.sidebar > div > div {
     margin: 20px;
-    margin-left: 0px;
-}
-
-.sidebar > :first-child {
-    margin: 30px;
 }
 
 .content {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 2rem 180px 2rem 180px;
+    grid-template-rows: 2rem 190px 2rem 190px;
     gap: 15px;
 }
 
