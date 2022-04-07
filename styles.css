@@ -34,27 +34,13 @@ button {
     overflow: scroll;
 }
 
-#logo,
-.sidebar-btn, 
-h2,
-#settings {
-    margin: 10px;
-}
-
-
-#logo {
-    height: 60px;
-}
-
 .sidebar-btn {
     display: flex;
     align-items: center;
 }
 
-img {
-    height: 1.8rem;
-    margin-right: 10px;
-    margin-left: 25px;
+#logo {
+    height: 60px;
 }
 
 h1 {
@@ -77,6 +63,13 @@ header {
 header > div {
     display: flex;
     align-items: center;
+}
+
+#logo,
+.sidebar-btn, 
+h2,
+#settings {
+    margin: 10px;
 }
 
 input {
@@ -145,7 +138,6 @@ input {
 
 .announcements {
     grid-row: 2 / 3
-
 }
 
 .trend-head {
@@ -154,6 +146,12 @@ input {
 
 .trending {
     grid-row: 4 / 5;
+}
+
+img {
+    height: 1.8rem;
+    margin-right: 10px;
+    margin-left: 25px;
 }
 
 .small-profile {
