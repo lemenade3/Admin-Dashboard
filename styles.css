@@ -6,10 +6,21 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+button {
+    height: 2.7rem;
+    width: 95px;
+    background-color: rgba(45, 65, 89, 0.8);
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 1.1rem;
+}
+
 .container {
     display: grid;
     grid-template-columns: 250px 1fr;
-    grid-template-rows: 120px 1fr;
+    grid-template-rows: 150px 1fr;
 }
 
 .sidebar {
@@ -23,18 +34,25 @@ body {
     overflow: scroll;
 }
 
-#logo {
-    height: 60px;
+#logo,
+.sidebar-btn, 
+h2,
+#settings {
     margin: 10px;
 }
 
+
+#logo {
+    height: 60px;
+}
+
 .sidebar-btn {
-    margin: 10px;
     display: flex;
     align-items: center;
 }
 
 img {
+    height: 1.8rem;
     margin-right: 10px;
     margin-left: 25px;
 }
@@ -44,21 +62,30 @@ h1 {
 }
 
 #settings {
-    margin: 10px;
     margin-top: 50px;
-
 }
 
 header {
     display: grid;
     grid-template-columns: 1fr 350px;
-    grid-template-rows: 60px 60px;
-    background-color: rgb(6, 119, 161);
+    grid-template-rows: 60px 80px;
+    background-color: rgba(70, 84, 102, 0.8);
+    align-items: center;
+    box-shadow: 0px 2px 1px rgba(45, 54, 66, 0.8);
+}
+
+header > div {
+    display: flex;
+    align-items: center;
 }
 
 input {
-    height: 1.25rem;
-    margin: 10px;
+    height: 1.5rem;
+    border-style: none;
+    border-radius: 1.25rem;
+    padding-left: 10px;
+    width: 80%;
+    background-color: #c6c6c6;
 }
 
 .content {
@@ -127,4 +154,21 @@ input {
 
 .trending {
     grid-row: 4 / 5;
+}
+
+.small-profile {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-right: 25px;
+}
+
+.large-profile {
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    object-fit: cover;
+    margin-right: 30px;
+    margin-left: 40px;
 }
