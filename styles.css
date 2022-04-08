@@ -47,6 +47,11 @@ h1 {
     font-size: 3rem;
 }
 
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 #settings {
     margin-top: 50px;
 }
@@ -91,8 +96,8 @@ input {
 
 .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 180px 180px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-rows: 230px 230px;
     grid-row: 2 / 5;
     gap: 15px;
     padding: 15px;
@@ -106,14 +111,21 @@ input {
 .project-card,
 .announcements,
 .trending {
-    background-color: rgba(134, 56, 95, 0.5);
+    background-color: rgba(134, 56, 95, 0.4);
     overflow: scroll;
     border-radius: 20px;
     padding: 15px;
 }
 
 .project-card {
-    height: 150px;
+    height: 200px;
+    position: relative;
+}
+
+.project-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .announcements,
@@ -121,7 +133,7 @@ input {
     height: 250px;
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(1fr, 100px));
-    min-width: 180px;
+    min-width: 220px;
 }
 
 .announcements > div,
@@ -129,6 +141,8 @@ input {
     padding: 10px;
     border-bottom: solid;
     border-color: grey;
+    display: flex;
+    align-items: center;
 }
 
 .announce-head {
@@ -151,6 +165,9 @@ input {
 img {
     height: 1.8rem;
     margin-right: 10px;
+}
+
+.sidebar-img {
     margin-left: 25px;
 }
 
